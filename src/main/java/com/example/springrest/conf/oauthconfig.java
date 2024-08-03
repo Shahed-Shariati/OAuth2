@@ -51,6 +51,7 @@ public class oauthconfig {
     }*/
 
 
+/*
 
 
     @Bean
@@ -81,6 +82,7 @@ public class oauthconfig {
         return authorizedClientManager;
     }
 
+*/
 
 
 

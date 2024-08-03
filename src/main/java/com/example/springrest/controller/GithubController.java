@@ -14,9 +14,9 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/github")
 public class GithubController {
 
-    @Autowired
-    private OAuth2AuthorizedClientService authorizedClientService;
-    
+/*    @Autowired
+    private OAuth2AuthorizedClientService authorizedClientService;*/
+
     private final GithubService githubService;
 //    private final OAuth2AuthorizedClientService oAuth2AuthorizedClientService;
 

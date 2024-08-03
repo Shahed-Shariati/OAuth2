@@ -1,5 +1,6 @@
 package com.example.springrest;
 
+import com.example.springrest.service.GithubService;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
@@ -7,7 +8,9 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class SpringRestApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(SpringRestApplication.class, args);
+     var context =   SpringApplication.run(SpringRestApplication.class, args);
+     var git = context.getBean(GithubService.class);
+     git.getUserRepos();
     }
 
 }

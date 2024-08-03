@@ -12,10 +12,12 @@ public class GithubService {
 
     @Autowired
     private OAuth2RestTemplate restTemplate;
+    @Autowired
     private WebClient webClient;
 
     public String getUserRepos() {
         String apiUrl = "https://api.github.com/user/repos";
+        System.out.println(webClient);
         return restTemplate.getForObject(apiUrl, String.class);
     }
 }
