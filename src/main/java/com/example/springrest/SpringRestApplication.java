@@ -10,7 +10,8 @@ public class SpringRestApplication {
     public static void main(String[] args) {
      var context =   SpringApplication.run(SpringRestApplication.class, args);
      var git = context.getBean(GithubService.class);
-     git.getUserRepos();
+    String re = git.getUserWeClient();
+        System.out.println(re);
     }
 
 }

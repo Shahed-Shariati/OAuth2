@@ -28,9 +28,9 @@ public class oauthconfig {
     @Bean
     public ClientCredentialsResourceDetails clientCredentialsResourceDetails() {
         ClientCredentialsResourceDetails details = new ClientCredentialsResourceDetails();
-        details.setClientId("Ov23liUegaLVGQkiQhap");
-        details.setClientSecret("d42c9ebb2ef4b972f149b7a0639823ece9ec804a");
-        details.setAccessTokenUri("https://example.com/oauth/token");
+        details.setClientId("myclient");
+        details.setClientSecret("QfBFZuSAVcWpC4kIBEjsL8w3qRy7xn9m");
+        details.setAccessTokenUri("http://localhost:8080/realms/myrealm/protocol/openid-connect/token");
         details.setGrantType("client_credentials");
         return details;
     }

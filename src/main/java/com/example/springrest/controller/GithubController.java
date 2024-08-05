@@ -29,7 +29,11 @@ public class GithubController {
 
     @GetMapping("/repo")
     public void getRepo(OAuth2AuthenticationToken token) {
-        String accessToken = getToken(token, "github");
+      /*  String accessToken = getToken(token, "github");
+      String result =  githubService.getUserRepos();
+        System.out.println(result);*/
+   String re =  githubService.getUserWeClient();
+
     }
 
     private String getToken(OAuth2AuthenticationToken token, String clientRegistration) {
