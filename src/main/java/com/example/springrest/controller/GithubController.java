@@ -9,6 +9,7 @@ import org.springframework.security.oauth2.core.OAuth2AccessToken;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+import reactor.core.publisher.Mono;
 
 @RestController
 @RequestMapping("/github")
@@ -28,11 +29,11 @@ public class GithubController {
 
 
     @GetMapping("/repo")
-    public void getRepo(OAuth2AuthenticationToken token) {
+    public Mono<String> getRepo(OAuth2AuthenticationToken token) {
       /*  String accessToken = getToken(token, "github");
       String result =  githubService.getUserRepos();
         System.out.println(result);*/
-   String re =  githubService.getUserWeClient();
+      return  githubService.getUserWeClient();
 
     }
 
