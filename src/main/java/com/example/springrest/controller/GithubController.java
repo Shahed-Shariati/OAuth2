@@ -2,17 +2,14 @@ package com.example.springrest.controller;
 
 import com.example.springrest.service.GithubService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.security.oauth2.client.OAuth2AuthorizedClient;
-import org.springframework.security.oauth2.client.OAuth2AuthorizedClientService;
 import org.springframework.security.oauth2.client.authentication.OAuth2AuthenticationToken;
-import org.springframework.security.oauth2.core.OAuth2AccessToken;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import reactor.core.publisher.Mono;
 
 @RestController
-@RequestMapping("/github")
+@RequestMapping("/api")
 public class GithubController {
 
 /*    @Autowired

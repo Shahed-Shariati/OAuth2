@@ -15,7 +15,7 @@ spring:
 #            client-id: 22a7100de41c7308d346
 #            client-secret: 05910ab890be29579e9c183443d92e756c450aaf
   security:
-     oauth2:
+    oauth2:
        client:
          registration:
            github:
@@ -30,5 +30,12 @@ spring:
               token-uri: http://localhost:8080/realms/myrealm/protocol/openid-connect/token
               user-info-uri: http://localhost:8080/realms/myrealm/protocol/openid-connect/userinfo
               user-name-attribute: login
+    user:
+      password: shahed
 server:
   port: 8082
+springdoc:
+  swagger-ui:
+    path: /swagger-ui/index.html
+  api-docs:
+    enabled: true
